@@ -34,7 +34,7 @@ f=func4(5)
 console.log(f)
 
 //rest operator
-rest_op=(...a)=>{
+rest_op=(...a)=>{ //when we dont know how many parameter are needed then we use this 
     return(a)
 }
 console.log(rest_op(1,2,3));
