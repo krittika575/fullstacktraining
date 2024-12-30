@@ -1,0 +1,14 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #282c34;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative; /* Optional: Make it sticky */
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  
+  

@@ -4,7 +4,7 @@ class ClassCompEg extends React.Component {
   render() {
     return (
       <div>
-        <h1>hiii</h1>
+        <h1>kongu Engineering College</h1>
       </div>
     );
   }
