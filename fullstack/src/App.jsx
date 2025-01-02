@@ -4,23 +4,33 @@ import About from "./Components/FunctionalComponents/About";
 import Contact from "./Components/FunctionalComponents/Contact";
 import Gallery from "./Components/FunctionalComponents/Gallery";
 import NavBar from "./Components/FunctionalComponents/NavBar";
+import UseEffect from "./Components/FunctionalComponents/UseEffect";
 import Footer from "./Components/FunctionalComponents/Footer";
+import UseRef from "./Components/FunctionalComponents/UseRef";
+import UseMemo from "./Components/FunctionalComponents/UseMemo";
+import UseContext from "./Components/FunctionalComponents/UseContext";
 import "./assets/css/Home.css";
 import "./assets/css/NavBAr.css";
-import "./assets/css/Footer.css";
+
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 function App() {
   return (
-    <div>
+    <div className='app-container' >
       <BrowserRouter>
-      <NavBar/>
+      <NavBar/><div className='main-content'>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/About" element={<About college="Kongu Engineering"clg1="IT"/>}/>
         <Route path="/Gallery" element={<Gallery/>}/>
-        <Route path="/Contact" element={<Contact/>}/></Routes></BrowserRouter>
-     <Footer/>
-    </div>
+        <Route path="/UseEffect" element={<UseEffect/>}/>
+        <Route path="/UseRef" element={<UseRef/>}/>
+        <Route path="/UseContext" element={<UseContext/>}/>
+        <Route path="/UseMemo" element={<UseMemo/>}/>
+        <Route path="/Contact" element={<Contact/>}/></Routes></div>
+         <Footer/>
+         </BrowserRouter></div>
+    
+   
   );
 }
 

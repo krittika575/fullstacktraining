@@ -8,6 +8,10 @@ var NavBar=()=>{
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/About">About</Link></li>
                     <li><Link to="/Contact">Contact</Link></li>
+                    <li><Link to="/UseEffect">UseEffect</Link></li>
+                    <li><Link to="/UseRef">USeRef</Link></li>
+                    <li><Link to="/UseContext">USeContext</Link></li>
+                    <li><Link to="/UseMemo">USeMemo</Link></li>
                     <li><Link to="/Gallery">Gallery</Link></li>
                 </ul>
             </nav>

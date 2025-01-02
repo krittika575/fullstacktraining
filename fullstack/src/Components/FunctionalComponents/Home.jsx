@@ -11,6 +11,8 @@ const Home=()=>{
             <p style={{color:"grey"}}>Day 4</p>
             <p style={styling}>React</p>
         </div>
+        
     );
 }
 export default Home;
+

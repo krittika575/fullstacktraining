@@ -1,5 +1,4 @@
 .box-model{
-    height: 100%;
     width: 1000px;
     border: 10px solid rgb(193, 155, 200);
     padding: 20px;
@@ -10,3 +9,4 @@
 #idSEg{
     text-align: center;
 }
+
