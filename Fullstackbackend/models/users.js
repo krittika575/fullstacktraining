@@ -1,8 +1,10 @@
 var mdb=require('mongoose')
-var userSchema=mdb.Schema({
-    firstName:String,
-    lastName:String,
-    email:String
+var UserSchema=mdb.Schema({
+    firstname:String,
+    lastname:String,
+    email:String,
+    password:String
+
 })
-var user_schema=mdb.model("users",userSchema)
-module.exports=user_schema
+var user_Schema=mdb.model("users",UserSchema)
+module.exports=user_Schema
