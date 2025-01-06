@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import Home from "./Components/FunctionalComponents/Home";
 import About from "./Components/FunctionalComponents/About";
 import Contact from "./Components/FunctionalComponents/Contact";
@@ -14,27 +14,32 @@ import UseContext from "./Components/FunctionalComponents/UseContext";
 import "./assets/css/Home.css";
 import "./assets/css/NavBar.css";
 
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className='app-container' >
+    <div className="app-container">
       <BrowserRouter>
-      <NavBar/><div className='main-content'>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/Signup" element={<Signup/>}/>
-        <Route path="/Login" element={<Login/>}/>
-        <Route path="/About" element={<About college="Kongu Engineering"clg1="IT"/>}/>
-        <Route path="/Gallery" element={<Gallery/>}/>
-        <Route path="/UseEffect" element={<UseEffect/>}/>
-        <Route path="/UseRef" element={<UseRef/>}/>
-        <Route path="/UseContext" element={<UseContext/>}/>
-        <Route path="/UseMemo" element={<UseMemo/>}/>
-        <Route path="/Contact" element={<Contact/>}/></Routes></div>
-         <Footer/>
-         </BrowserRouter></div>
-    
-   
+        <NavBar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Signup" element={<Signup />} />
+            <Route path="/Login" element={<Login />} />
+            <Route
+              path="/About"
+              element={<About college="Kongu Engineering" clg1="IT" />}
+            />
+            <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/UseEffect" element={<UseEffect />} />
+            <Route path="/UseRef" element={<UseRef />} />
+            <Route path="/UseContext" element={<UseContext />} />
+            <Route path="/UseMemo" element={<UseMemo />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
