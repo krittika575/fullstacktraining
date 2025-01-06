@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/login", {
+      const response = await axios.post("https://fullstacktraining-ktw0.onrender.com/login", {
         email,
         password,
       });

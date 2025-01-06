@@ -10,7 +10,7 @@ const SignUp = () => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/signup", {
+      const response = await axios.post("https://fullstacktraining-ktw0.onrender.com/signup", {
         firstName,
         lastName,
         email,  
